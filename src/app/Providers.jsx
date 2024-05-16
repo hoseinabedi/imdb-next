@@ -1,9 +1,10 @@
+'use client'
 
 import { ThemeProvider } from "next-themes";
 
 const Providers = ({ children }) => {
     return (
-        <ThemeProvider>
+        <ThemeProvider defaultTheme="system" attribute="class">
             <div className="">
                 {children}
             </div>
