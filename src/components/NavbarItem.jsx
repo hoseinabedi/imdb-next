@@ -1,8 +1,11 @@
+import Link from 'next/link';
 import React from 'react'
 
-const NavbarItem = () => {
+const NavbarItem = ({title, param}) => {
     return (
-        <div>NavbarItem</div>
+        <div>
+            <Link href={`/?genre=${param}`} >{title}</Link>
+        </div>
     )
 }
 
