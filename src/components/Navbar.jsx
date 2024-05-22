@@ -2,7 +2,7 @@ import NavbarItem from "./NavbarItem";
 
 const Navbar = () => {
     return (
-        <div>
+        <div className="flex dark:bg-gray-600 bg-amber-100 gap-6 p-4 lg:text-lg justify-center">
             <NavbarItem title="Trending" param="fetchTrending" />
             <NavbarItem title="Top Rated" param="fetchTopRated" />
         </div>
